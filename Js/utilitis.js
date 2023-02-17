@@ -29,6 +29,14 @@ function Rhombus (d1, d2) {
  }
 
 
+ function pentagon (p, b) {
+    const area = 0.5 * parseFloat(p) * parseFloat(b);
+    return area.toFixed(2);
+
+
+ }
+
+
 
 function getValue (id) {
     return document.getElementById(id).value;

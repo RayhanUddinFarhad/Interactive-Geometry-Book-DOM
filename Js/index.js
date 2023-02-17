@@ -304,14 +304,14 @@ document.getElementById('calculate-pentagon').addEventListener('click', function
     count = count + 1;
 
 
-    const d1 = getValue('Rhomb-d1');
-    const d2 = getValue('Rhomb-d2');
+    const p = getValue('pentagon-p');
+    const b = getValue('pentagon-b');
 
 
 
 
 
-    if (d1.trim  () === '' || d2.trim () === '' || d1 <0 || d2<0 || isNaN(d1) || isNaN(d2) )  {
+    if (p.trim  () === '' || b.trim () === '' || p <0 || b<0 || isNaN(p) || isNaN(b) )  {
 
 
         alert ('Enter valid number')
@@ -321,7 +321,7 @@ document.getElementById('calculate-pentagon').addEventListener('click', function
     else {
 
 
-        const result = Rhombus (d1, d2)
+        const result = pentagon (p, b)
         const container = containerArea()
     
         const assign = document.createElement('div');
@@ -332,7 +332,7 @@ document.getElementById('calculate-pentagon').addEventListener('click', function
         <div  class="flex  space-x-5 text-sm p-2">
     
         <p>${count}</p>
-                            <p>Rhombus
+                            <p>Pentagon
                             </p>
                             <p><span>${result}</span>cm<sup>2</sup></p>
                             <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
