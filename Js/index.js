@@ -23,8 +23,8 @@ document.getElementById('calculate-triangle').addEventListener('click', function
     count = count + 1;
 
 
-    const b = document.getElementById('triangle-b').value;
-    const h = document.getElementById('triangle-h').value;
+    const b = getValue('triangle-b');
+    const h = getValue('triangle-h');
 
 
 
@@ -39,8 +39,9 @@ document.getElementById('calculate-triangle').addEventListener('click', function
 
     else {
 
-        const result = 0.5 * parseFloat(b) * parseFloat(h);
-        const container = document.getElementById ('container-area')
+
+        const result = triaAngle (b, h)
+        const container = containerArea()
     
         const assign = document.createElement('div');
     
@@ -73,35 +74,7 @@ document.getElementById('calculate-triangle').addEventListener('click', function
     
     }
 
-    // const result = 0.5 * parseFloat(b) * parseFloat(h);
-    // const container = document.getElementById ('container-area')
-
-    // const assign = document.createElement('div');
-
-
-    // assign.innerHTML = `
-
-    // <div  class="flex  space-x-5 text-sm p-2">
-
-    // <p>${count}</p>
-    //                     <p>Triangle</p>
-    //                     <p><span>${result}</span>cm<sup>2</sup></p>
-    //                     <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
-
-    
-    
-    
-    
-    
-
-
-    //                     </div>
-
-    //                     `
-
-
-    // ;
-
+   
 
 
 
