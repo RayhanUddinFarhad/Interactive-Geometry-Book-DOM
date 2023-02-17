@@ -160,6 +160,216 @@ document.getElementById('calculate-rectangle').addEventListener('click', functio
 })
 
 
+document.getElementById('calculate-paralle').addEventListener('click', function (e) {
+
+    count = count + 1;
+
+
+    const b = getValue('paralle-b');
+    const h = getValue('paralle-h');
+
+
+
+
+
+    if (b.trim  () === '' || h.trim () === '' || b <0 || h<0 || isNaN(b) || isNaN(h) )  {
+
+
+        alert ('Enter valid number')
+
+    }
+
+    else {
+
+
+        const result = Parallelogram (b, h)
+        const container = containerArea()
+    
+        const assign = document.createElement('div');
+    
+    
+        assign.innerHTML = `
+    
+        <div  class="flex  space-x-5 text-sm p-2">
+    
+        <p>${count}</p>
+                            <p>Parallelogram
+                            </p>
+                            <p><span>${result}</span>cm<sup>2</sup></p>
+                            <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
+    
+        
+        
+        
+        
+        
+    
+    
+                            </div>
+    
+                            `
+    
+    
+        ;
+
+        container.appendChild(assign);
+
+    
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+})
+
+document.getElementById('calculate-rhomb').addEventListener('click', function (e) {
+
+    count = count + 1;
+
+
+    const d1 = getValue('Rhomb-d1');
+    const d2 = getValue('Rhomb-d2');
+
+
+
+
+
+    if (d1.trim  () === '' || d2.trim () === '' || d1 <0 || d2<0 || isNaN(d1) || isNaN(d2) )  {
+
+
+        alert ('Enter valid number')
+
+    }
+
+    else {
+
+
+        const result = Rhombus (d1, d2)
+        const container = containerArea()
+    
+        const assign = document.createElement('div');
+    
+    
+        assign.innerHTML = `
+    
+        <div  class="flex  space-x-5 text-sm p-2">
+    
+        <p>${count}</p>
+                            <p>Rhombus
+                            </p>
+                            <p><span>${result}</span>cm<sup>2</sup></p>
+                            <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
+    
+        
+        
+        
+        
+        
+    
+    
+                            </div>
+    
+                            `
+    
+    
+        ;
+
+        container.appendChild(assign);
+
+    
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+})
+document.getElementById('calculate-pentagon').addEventListener('click', function (e) {
+
+    count = count + 1;
+
+
+    const d1 = getValue('Rhomb-d1');
+    const d2 = getValue('Rhomb-d2');
+
+
+
+
+
+    if (d1.trim  () === '' || d2.trim () === '' || d1 <0 || d2<0 || isNaN(d1) || isNaN(d2) )  {
+
+
+        alert ('Enter valid number')
+
+    }
+
+    else {
+
+
+        const result = Rhombus (d1, d2)
+        const container = containerArea()
+    
+        const assign = document.createElement('div');
+    
+    
+        assign.innerHTML = `
+    
+        <div  class="flex  space-x-5 text-sm p-2">
+    
+        <p>${count}</p>
+                            <p>Rhombus
+                            </p>
+                            <p><span>${result}</span>cm<sup>2</sup></p>
+                            <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
+    
+        
+        
+        
+        
+        
+    
+    
+                            </div>
+    
+                            `
+    
+    
+        ;
+
+        container.appendChild(assign);
+
+    
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+})
+
+
 
 
 

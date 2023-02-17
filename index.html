@@ -115,10 +115,10 @@
                           <p>b=10cm, h=12cm</p>
 
                           <div class="flex space-x-5 items-center">
-                            <input  class="w-24 bg-gray-200 p-2" id="paralle-b" type="number" placeholder="w">
+                            <input  class="w-24 bg-gray-200 p-2" id="paralle-b" type="number" placeholder="b">
                             <label for="paralle-b">cm</label>
 
-                            <input class="w-24 bg-gray-200 p-2" id="paralle-h" type="number" placeholder="l">
+                            <input class="w-24 bg-gray-200 p-2" id="paralle-h" type="number" placeholder="h">
                             <label for="paralle-h">cm</label>
 
 
@@ -128,7 +128,7 @@
 
 
                           <div class="card-actions py-5">
-                            <button class="p-4 px-24 bg-[#1090D8] text-white rounded-lg">Calculate</button>
+                            <button id="calculate-paralle" class="p-4 px-24 bg-[#1090D8] text-white rounded-lg">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -136,12 +136,12 @@
 
                     <div class="card w-80 bg-base-100 border">
                         <figure class="px-10 pt-10">
-                          <img src="Images/Parallelogram.png" alt="Shoes" class="rounded-xl" />
+                          <img src="Images/Rhombus.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                           <h2 class="card-title">Rhombus</h2>
-                          <p>Area (A) = 0.5 * d1 * d2</p>
-                          <p>b=10cm, h=12cm</p>
+                          <p>Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+                          <p>d<sub>1</sub>=16cm,  d<sub>2</sub>=8cm</p>
 
                           <div class="flex space-x-5 items-center">
                             <input  class="w-24 bg-gray-200 p-2" id="Rhomb-d1" type="number" placeholder="d1">
@@ -157,7 +157,7 @@
 
 
                           <div class="card-actions py-5">
-                            <button class="p-4 px-24 bg-[#1090D8] text-white rounded-lg">Calculate</button>
+                            <button id="calculate-rhomb" class="p-4 px-24 bg-[#1090D8] text-white rounded-lg">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -186,7 +186,7 @@
 
 
                           <div class="card-actions py-5">
-                            <button class="p-4 px-24 bg-[#1090D8] text-white rounded-lg">Calculate</button>
+                            <button id="calculate-pentagon" class="p-4 px-24 bg-[#1090D8] text-white rounded-lg">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -233,7 +233,7 @@
             <div class="">
 
 
-                <div class="card w-64 bg-base-100 border h-96 ">
+                <div class="card w-72 bg-base-100 border ">
                     <figure class="px-10 pt-10">
                         <h3 class="border-b-2 border-black text-black">Area Calculator</h3>
                     </figure>

@@ -14,6 +14,21 @@ function reactangle (w, l) {
 }
 
 
+function Parallelogram (b, h) {
+
+
+    const area = parseFloat(b) * parseFloat(h);
+    return area.toFixed(2);
+}
+
+
+function Rhombus (d1, d2) {
+
+    const area = 0.5* parseFloat(d1) * parseFloat(d2);
+    return area.toFixed(2);
+ }
+
+
 
 function getValue (id) {
     return document.getElementById(id).value;
