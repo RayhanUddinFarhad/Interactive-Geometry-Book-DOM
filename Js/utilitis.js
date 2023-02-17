@@ -1,7 +1,16 @@
 function triaAngle (b, h) {
 
 
-    return 0.5 * parseFloat(b) * parseFloat(h);
+    const area = 0.5 * parseFloat(b) * parseFloat(h);
+  return area.toFixed(2);
+}
+
+
+function reactangle (w, l) {
+
+
+    const area = parseFloat(w) * parseFloat(l);
+  return area.toFixed(2);
 }
 
 

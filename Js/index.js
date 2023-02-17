@@ -90,6 +90,96 @@ document.getElementById('calculate-triangle').addEventListener('click', function
 
 
 
+document.getElementById('calculate-rectangle').addEventListener('click', function (e) {
+
+    count = count + 1;
+
+
+    const w = getValue('reactangle-w');
+    const l = getValue('reactangle-l');
+
+
+
+
+
+    if (w.trim  () === '' || l.trim () === '' || w <0 || l<0 || isNaN(w) || isNaN(l) )  {
+
+
+        alert ('Enter valid number')
+
+    }
+
+    else {
+
+
+        const result = reactangle (w, l)
+        const container = containerArea()
+    
+        const assign = document.createElement('div');
+    
+    
+        assign.innerHTML = `
+    
+        <div  class="flex  space-x-5 text-sm p-2">
+    
+        <p>${count}</p>
+                            <p>Reactangle</p>
+                            <p><span>${result}</span>cm<sup>2</sup></p>
+                            <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
+    
+        
+        
+        
+        
+        
+    
+    
+                            </div>
+    
+                            `
+    
+    
+        ;
+
+        container.appendChild(assign);
+
+    
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // const buttons = document.querySelectorAll('.calculate');
