@@ -39,7 +39,7 @@ function Rhombus (d1, d2) {
 
  function ellepse (a, b) {
 
-    const area = Math.PI * parseFloat(a) * parseFloat (b)
+    const area = 3.14 * parseFloat(a) * parseFloat (b)
     return area.toFixed(2);
  }
 

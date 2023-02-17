@@ -1,16 +1,4 @@
-// function Traiangle (b, h) {
 
-//     const b = document.getElementById ('triangle-b').value;
-//     const h = document.getElementById ('triangle-h').value;
-
-//     const result = 0.5 * parseFloat (b) * parseFloat (h);
-
-//     console.log (result);
-
-
-
-
-// }
 
 
 // It will count the number of area calculator
@@ -51,7 +39,7 @@ document.getElementById('calculate-triangle').addEventListener('click', function
     
         <div  class="flex  space-x-5 text-sm p-2">
     
-        <p>${count}</p>
+        <p>${count}.</p>
                             <p>Triangle</p>
                             <p><span>${result}</span>cm<sup>2</sup></p>
                             <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
@@ -126,7 +114,7 @@ document.getElementById('calculate-rectangle').addEventListener('click', functio
     
         <div  class="flex  space-x-5 text-sm p-2">
     
-        <p>${count}</p>
+        <p>${count}.</p>
                             <p>Reactangle</p>
                             <p><span>${result}</span>cm<sup>2</sup></p>
                             <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
@@ -198,7 +186,7 @@ document.getElementById('calculate-paralle').addEventListener('click', function 
     
         <div  class="flex  space-x-5 text-sm p-2">
     
-        <p>${count}</p>
+        <p>${count}.</p>
                             <p>Parallelogram
                             </p>
                             <p><span>${result}</span>cm<sup>2</sup></p>
@@ -272,7 +260,7 @@ document.getElementById('calculate-rhomb').addEventListener('click', function (e
     
         <div  class="flex  space-x-5 text-sm p-2">
     
-        <p>${count}</p>
+        <p>${count}.</p>
                             <p>Rhombus
                             </p>
                             <p><span>${result}</span>cm<sup>2</sup></p>
@@ -344,7 +332,7 @@ document.getElementById('calculate-pentagon').addEventListener('click', function
     
         <div  class="flex  space-x-5 text-sm p-2">
     
-        <p>${count}</p>
+        <p>${count}.</p>
                             <p>Pentagon
                             </p>
                             <p><span>${result}</span>cm<sup>2</sup></p>
@@ -417,7 +405,7 @@ document.getElementById('calculate-elep').addEventListener('click', function (e)
     
         <div  class="flex  space-x-5 text-sm p-2">
     
-        <p>${count}</p>
+        <p>${count}.</p>
                             <p>Ellipse
                             </p>
                             <p><span>${result}</span>cm<sup>2</sup></p>
@@ -473,15 +461,15 @@ document.getElementById ('btn-blog').addEventListener ('click', function () {
 const cards = document.querySelectorAll('.card1');
 
 
-cards.forEach(card => {
-  card.addEventListener('mouseover', () => {
-    const color = getRandomColor();
-    card.style.backgroundColor = color;
-  });
-  card.addEventListener('mouseout', () => {
-    card.style.backgroundColor = 'white';
-  });
-});
+for (const card of cards) {
+    card.addEventListener('mouseover', function () {
+      const color = getRandomColor();
+      card.style.backgroundColor = color;
+    });
+    card.addEventListener('mouseout', function() {
+      card.style.backgroundColor = 'white';
+    });
+  };
 
 
 
@@ -503,25 +491,4 @@ cards.forEach(card => {
 
 
 
-// const buttons = document.querySelectorAll('.calculate');
 
-// buttons.forEach(function (button) {
-//     button.addEventListener('click', function (e) {
-//         this.disabled = true;
-
-//         count = count + 1;
-
-//         const players = e.target.parentNode.parentNode;
-
-//         const playerName = players.querySelector('.card-title').innerText;
-
-//         const container = document.createElement('div');
-
-//         container.innerHTML = `<p>${count} <span>${playerName}</span></p>`;
-
-//         const nameContainer = document.getElementById('name-container');
-
-//         nameContainer.appendChild(container);
-//         document.getElementById ('btn-calculate').removeAttribute ('disabled');
-//     });
-// });
