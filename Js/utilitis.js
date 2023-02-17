@@ -37,6 +37,13 @@ function Rhombus (d1, d2) {
  }
 
 
+ function ellepse (a, b) {
+
+    const area = Math.PI * parseFloat(a) * parseFloat (b)
+    return area.toFixed(2);
+ }
+
+
 
 function getValue (id) {
     return document.getElementById(id).value;

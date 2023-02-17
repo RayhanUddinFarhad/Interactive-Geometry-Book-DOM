@@ -368,6 +368,80 @@ document.getElementById('calculate-pentagon').addEventListener('click', function
 
 
 })
+document.getElementById('calculate-elep').addEventListener('click', function (e) {
+
+    count = count + 1;
+
+
+    const a = getValue('ellep-a');
+    const b = getValue('ellep-b');
+
+
+
+
+
+    if (a.trim  () === '' || b.trim () === '' || a <0 || b<0 || isNaN(a) || isNaN(b) )  {
+
+
+        alert ('Enter valid number')
+
+    }
+
+    else {
+
+
+        const result =  ellepse (a, b)
+        const container = containerArea()
+    
+        const assign = document.createElement('div');
+    
+    
+        assign.innerHTML = `
+    
+        <div  class="flex  space-x-5 text-sm p-2">
+    
+        <p>${count}</p>
+                            <p>Pentagon
+                            </p>
+                            <p><span>${result}</span>cm<sup>2</sup></p>
+                            <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
+    
+        
+        
+        
+        
+        
+    
+    
+                            </div>
+    
+                            `
+    
+    
+        ;
+
+        container.appendChild(assign);
+
+    
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+})
+
+
+document.getElementById ('btn-blog').addEventListener ('click', function () {
+    window.location.href = 'blog.html';
+})
 
 
 
