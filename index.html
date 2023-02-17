@@ -16,13 +16,13 @@
 
     <header class="mt-8">
 
-        <div class="navbar bg-sky-100 ">
+        <div class="navbar bg-sky-100 p-4">
             <div class="flex-1 px-10 pt-3">
 
                 <img src="Images/Interactive Geometry Book-1.png" alt="">
             </div>
             <div class="flex-none">
-              <button id="btn-blog" class="btn bg-blue-500 outline-none border-0">
+              <button id="btn-blog" class=" text-white p-3 px-7 rounded-md bg-[#1090D8] outline-none border-0">
                 Blog
 
                
@@ -39,7 +39,10 @@
 
     <main class="py-12">
 
-        <section class="lg:flex space-x-2">
+
+        <!-- Divided 2 area with flex -->
+
+        <section class="lg:flex space-x-2 space-y-8 lg:space-y-0 container mx-auto lg:mx-0">
 
 
 
@@ -48,10 +51,13 @@
 
             <div class="">
 
-                <div class="lg:grid lg:grid-cols-3  max-xl:grid-cols-2  gap-5 space-x-10">
+                <div class="lg:grid lg:grid-cols-3  max-xl:grid-cols-2  gap-5 lg:space-x-10 space-x-0 space-y-5 lg:space-y-0">
 
 
-                    <div class="card w-80 bg-base-100 border ">
+                    <!-- Triangle card started -->
+
+
+                    <div class="card card1 w-80 bg-base-100 border lg:ml-10 ml-0 ">
                         <figure class="px-10 pt-10">
                           <img src="Images/Triangle.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -77,8 +83,15 @@
                           </div>
                         </div>
                       </div>
+
+
+                      <!-- Triangle card end -->
+
+
+
+                      <!-- Reactangle card started -->
                     
-                    <div class="card w-80 bg-base-100 border">
+                    <div class="card card1 w-80 bg-base-100 border">
                         <figure class="px-10 pt-10">
                           <img src="Images/Rectangle.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -104,14 +117,20 @@
                           </div>
                         </div>
                       </div>
+
+
+                      <!-- Reactangle card end -->
+
+
+                      <!-- Parallelogram card start -->
                     
-                    <div class="card w-80 bg-base-100 border">
+                    <div class="card card1 w-80 bg-base-100 border">
                         <figure class="px-10 pt-10">
                           <img src="Images/Parallelogram.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                           <h2 class="card-title">Parallelogram</h2>
-                          <p>Area (A) = b * h</p>
+                          <p>Area (A) = b x h</p>
                           <p>b=10cm, h=12cm</p>
 
                           <div class="flex space-x-5 items-center">
@@ -133,14 +152,19 @@
                         </div>
                       </div>
 
+                      <!-- Parallelogram card end -->
 
-                    <div class="card w-80 bg-base-100 border">
+
+                      <!-- Rhombus card start -->
+
+
+                    <div class="card card1 w-80 bg-base-100 border">
                         <figure class="px-10 pt-10">
                           <img src="Images/Rhombus.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                           <h2 class="card-title">Rhombus</h2>
-                          <p>Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+                          <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                           <p>d<sub>1</sub>=16cm,  d<sub>2</sub>=8cm</p>
 
                           <div class="flex space-x-5 items-center">
@@ -162,14 +186,18 @@
                         </div>
                       </div>
 
+                      <!-- Rhombus card end -->
 
-                    <div class="card w-80 bg-base-100 border">
+                      <!-- Pentagon card start -->
+
+
+                    <div class="card card1 w-80 bg-base-100 border">
                         <figure class="px-10 pt-10">
                           <img src="Images/Pentagon.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                           <h2 class="card-title">Pentagon</h2>
-                          <p>Area (A) = 0.5 * p * b</p>
+                          <p>Area (A) = 0.5 x p x b</p>
                           <p>p=6cm, b=10cm</p>
 
                           <div class="flex space-x-5 items-center">
@@ -190,8 +218,13 @@
                           </div>
                         </div>
                       </div>
+
+
+                      <!-- Pentagon card end -->
+
+                      <!-- Ellipse Card start -->
                     
-                    <div class="card w-80 bg-base-100 border">
+                    <div class="card card1 w-80 bg-base-100 border">
                         <figure class="px-10 pt-10">
                           <img src="Images/Ellipse 1.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -219,6 +252,8 @@
                           </div>
                         </div>
                       </div>
+
+                      <!-- Ellipse card End -->
                     
 
 
@@ -233,6 +268,9 @@
             <div class="">
 
 
+                <!-- Here is area calculate where will show results -->
+
+
                 <div class="card w-72 bg-base-100 border ">
                     <figure class="px-10 pt-10">
                         <h3 class="border-b-2 border-black text-black">Area Calculator</h3>
@@ -244,10 +282,6 @@
 
                         
 
-                        <!-- <p>1</p>
-                        <p>Triangle</p>
-                        <p>12cm<sup>2</sup></p>
-                        <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button> -->
 
 
 

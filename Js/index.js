@@ -13,11 +13,12 @@
 // }
 
 
+// It will count the number of area calculator
 
 let count = 0;
 
 
-
+// started calculate Triangle area
 document.getElementById('calculate-triangle').addEventListener('click', function (e) {
 
     count = count + 1;
@@ -86,6 +87,9 @@ document.getElementById('calculate-triangle').addEventListener('click', function
 
 
 })
+
+
+// Start the Reactangle area calculation
 
 
 
@@ -159,6 +163,8 @@ document.getElementById('calculate-rectangle').addEventListener('click', functio
 
 })
 
+//Start the Parallelogram area calculation
+
 
 document.getElementById('calculate-paralle').addEventListener('click', function (e) {
 
@@ -230,6 +236,10 @@ document.getElementById('calculate-paralle').addEventListener('click', function 
 
 })
 
+
+// //Start the Rhombus
+//  area calculation
+
 document.getElementById('calculate-rhomb').addEventListener('click', function (e) {
 
     count = count + 1;
@@ -299,6 +309,9 @@ document.getElementById('calculate-rhomb').addEventListener('click', function (e
 
 
 })
+
+
+//Start the Pentagon area calculation
 document.getElementById('calculate-pentagon').addEventListener('click', function (e) {
 
     count = count + 1;
@@ -368,6 +381,10 @@ document.getElementById('calculate-pentagon').addEventListener('click', function
 
 
 })
+
+
+
+//Start the Ellipse area calculation
 document.getElementById('calculate-elep').addEventListener('click', function (e) {
 
     count = count + 1;
@@ -401,7 +418,7 @@ document.getElementById('calculate-elep').addEventListener('click', function (e)
         <div  class="flex  space-x-5 text-sm p-2">
     
         <p>${count}</p>
-                            <p>Pentagon
+                            <p>Ellipse
                             </p>
                             <p><span>${result}</span>cm<sup>2</sup></p>
                             <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
@@ -439,6 +456,10 @@ document.getElementById('calculate-elep').addEventListener('click', function (e)
 })
 
 
+
+//That will take into another page
+
+
 document.getElementById ('btn-blog').addEventListener ('click', function () {
     window.location.href = 'blog.html';
 })
@@ -446,17 +467,11 @@ document.getElementById ('btn-blog').addEventListener ('click', function () {
 
 
 
+//This is Random color making area
 
-const cards = document.querySelectorAll('.card');
 
-function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
+const cards = document.querySelectorAll('.card1');
+
 
 cards.forEach(card => {
   card.addEventListener('mouseover', () => {
