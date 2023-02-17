@@ -447,6 +447,28 @@ document.getElementById ('btn-blog').addEventListener ('click', function () {
 
 
 
+const cards = document.querySelectorAll('.card');
+
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+cards.forEach(card => {
+  card.addEventListener('mouseover', () => {
+    const color = getRandomColor();
+    card.style.backgroundColor = color;
+  });
+  card.addEventListener('mouseout', () => {
+    card.style.backgroundColor = 'white';
+  });
+});
+
+
 
 
 
