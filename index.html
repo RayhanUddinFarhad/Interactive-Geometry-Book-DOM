@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="mx-8">
+
+
+    <header class="mt-8">
+
+        <div class="navbar bg-sky-100 ">
+            <div class="flex-1 px-10 pt-3">
+
+                <img src="Images/Interactive Geometry Book-1.png" alt="">
+            </div>
+            <div class="flex-none">
+              <button class="btn bg-blue-500 outline-none border-0">
+                Blog
+
+               
+              </button>
+            </div>
+          </div>
+
+
+
+
+    </header>
+
+
+
+    <main class="py-12">
+
+        <section class="lg:flex space-x-2">
+
+
+
+
+
+
+            <div class="">
+
+                <div class="lg:grid lg:grid-cols-3  max-xl:grid-cols-2  gap-5 space-x-10">
+
+
+                    <div class="card w-80 bg-base-100 border ">
+                        <figure class="px-10 pt-10">
+                          <img src="Images/Triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Triangle</h2>
+                          <p>Area (A) =0.5 ×  b × h</p>
+
+                          <div class="flex space-x-5 items-center">
+                            <input  class="w-24 bg-gray-200 p-2" id="triangle-b" type="number" placeholder="b">
+                            <label for="triangle-b">cm</label>
+
+                            <input class="w-24 bg-gray-200 p-2" id="triangle-h" type="number" placeholder="h">
+                            <label for="triangle-h">cm</label>
+
+
+                          </div>
+
+
+
+
+                          <div class="card-actions py-5">
+                            <button class="p-4 px-24 bg-[#1090D8] text-white rounded-lg">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    <div class="card w-80 bg-base-100 border">
+                        <figure class="px-10 pt-10">
+                          <img src="Images/Rectangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Rectangle</h2>
+                          <p>Area (A) = w×I</p>
+
+                          <div class="flex space-x-5 items-center">
+                            <input  class="w-24 bg-gray-200 p-2" id="triangle-w" type="number" placeholder="w">
+                            <label for="Reactangle-w">cm</label>
+
+                            <input class="w-24 bg-gray-200 p-2" id="triangle-l" type="number" placeholder="l">
+                            <label for="Reactangle-l">cm</label>
+
+
+                          </div>
+
+
+
+
+                          <div class="card-actions py-5">
+                            <button class="p-4 px-24 bg-[#1090D8] text-white rounded-lg">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    <div class="card w-80 bg-base-100 border">
+                        <figure class="px-10 pt-10">
+                          <img src="Images/Parallelogram.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Parallelogram</h2>
+                          <p>Area (A) = b * h</p>
+                          <p>b=10cm, h=12cm</p>
+
+                          <div class="flex space-x-5 items-center">
+                            <input  class="w-24 bg-gray-200 p-2" id="paralle-b" type="number" placeholder="w">
+                            <label for="paralle-b">cm</label>
+
+                            <input class="w-24 bg-gray-200 p-2" id="paralle-h" type="number" placeholder="l">
+                            <label for="paralle-h">cm</label>
+
+
+                          </div>
+
+
+
+
+                          <div class="card-actions py-5">
+                            <button class="p-4 px-24 bg-[#1090D8] text-white rounded-lg">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    <div class="card w-80 bg-base-100 border">
+                        <figure class="px-10 pt-10">
+                          <img src="Images/Parallelogram.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Rhombus</h2>
+                          <p>Area (A) = 0.5 * d1 * d2</p>
+                          <p>b=10cm, h=12cm</p>
+
+                          <div class="flex space-x-5 items-center">
+                            <input  class="w-24 bg-gray-200 p-2" id="Rhomb-d1" type="number" placeholder="d1">
+                            <label for="Rhomb-d1">cm</label>
+
+                            <input class="w-24 bg-gray-200 p-2" id="Rhomb-d2" type="number" placeholder="d2">
+                            <label for="Rhomb-d2">cm</label>
+
+
+                          </div>
+
+
+
+
+                          <div class="card-actions py-5">
+                            <button class="p-4 px-24 bg-[#1090D8] text-white rounded-lg">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    
+
+
+                   
+
+                </div>
+
+
+            </div>
+
+
+            <div class="">
+
+
+                <div class="card w-60 bg-base-100 border h-96">
+                    <figure class="px-10 pt-10">
+                        <h3 class="border-b-2 border-black text-black">Area Calculator</h3>
+                    </figure>
+                    
+                  </div>
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+
+
+</body>
+
+</html>
