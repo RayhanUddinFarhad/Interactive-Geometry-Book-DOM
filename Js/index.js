@@ -19,51 +19,42 @@ document.getElementById('calculate-triangle').addEventListener('click', function
 
 
 
-    if (b.trim  () === '' || h.trim () === '' || b <0 || h<0 || isNaN(b) || isNaN(h) )  {
+    if (b.trim() === '' || h.trim() === '' || b < 0 || h < 0 || isNaN(b) || isNaN(h)) {
 
 
-        alert ('Enter valid number')
+        alert('Enter valid number')
 
     }
 
     else {
 
 
-        const result = triaAngle (b, h)
+        const result = triaAngle(b, h)
         const container = containerArea()
-    
-        const assign = document.createElement('div');
-    
-    
+
+        const assign = document.createElement('tr');
+
+
         assign.innerHTML = `
     
-        <div  class="flex  space-x-5 text-sm p-2">
-    
-        <p>${count}.</p>
-                            <p>Triangle</p>
-                            <p><span>${result}</span>cm<sup>2</sup></p>
-                            <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
-    
-        
-        
-        
-        
-        
-    
-    
-                            </div>
+        <th>${count}.</th>
+        <td>Triangle</td>
+
+        <td>${result}</td>
+        <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
+        </td>
     
                             `
-    
-    
-        ;
+
+
+            ;
 
         container.appendChild(assign);
 
-    
+
     }
 
-   
+
 
 
 
@@ -94,51 +85,42 @@ document.getElementById('calculate-rectangle').addEventListener('click', functio
 
 
 
-    if (w.trim  () === '' || l.trim () === '' || w <0 || l<0 || isNaN(w) || isNaN(l) )  {
+    if (w.trim() === '' || l.trim() === '' || w < 0 || l < 0 || isNaN(w) || isNaN(l)) {
 
 
-        alert ('Enter valid number')
+        alert('Enter valid number')
 
     }
 
     else {
 
 
-        const result = reactangle (w, l)
+        const result = reactangle(w, l)
         const container = containerArea()
-    
-        const assign = document.createElement('div');
-    
-    
+
+        const assign = document.createElement('tr');
+
+
         assign.innerHTML = `
     
-        <div  class="flex  space-x-5 text-sm p-2">
-    
-        <p>${count}.</p>
-                            <p>Reactangle</p>
-                            <p><span>${result}</span>cm<sup>2</sup></p>
-                            <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
-    
-        
-        
-        
-        
-        
-    
-    
-                            </div>
+        <th>${count}.</th>
+        <td>Rectangle</td>
+
+        <td>${result}</td>
+        <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
+        </td>
     
                             `
-    
-    
-        ;
+
+
+            ;
 
         container.appendChild(assign);
 
-    
+
     }
 
-   
+
 
 
 
@@ -166,52 +148,42 @@ document.getElementById('calculate-paralle').addEventListener('click', function 
 
 
 
-    if (b.trim  () === '' || h.trim () === '' || b <0 || h<0 || isNaN(b) || isNaN(h) )  {
+    if (b.trim() === '' || h.trim() === '' || b < 0 || h < 0 || isNaN(b) || isNaN(h)) {
 
 
-        alert ('Enter valid number')
+        alert('Enter valid number')
 
     }
 
     else {
 
 
-        const result = Parallelogram (b, h)
+        const result = Parallelogram(b, h)
         const container = containerArea()
-    
-        const assign = document.createElement('div');
-    
-    
+
+        const assign = document.createElement('tr');
+
+
         assign.innerHTML = `
     
-        <div  class="flex  space-x-5 text-sm p-2">
-    
-        <p>${count}.</p>
-                            <p>Parallelogram
-                            </p>
-                            <p><span>${result}</span>cm<sup>2</sup></p>
-                            <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
-    
-        
-        
-        
-        
-        
-    
-    
-                            </div>
+        <th>${count}.</th>
+        <td>Parallelogram</td>
+
+        <td>${result}</td>
+        <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
+        </td>
     
                             `
-    
-    
-        ;
+
+
+            ;
 
         container.appendChild(assign);
 
-    
+
     }
 
-   
+
 
 
 
@@ -240,52 +212,42 @@ document.getElementById('calculate-rhomb').addEventListener('click', function (e
 
 
 
-    if (d1.trim  () === '' || d2.trim () === '' || d1 <0 || d2<0 || isNaN(d1) || isNaN(d2) )  {
+    if (d1.trim() === '' || d2.trim() === '' || d1 < 0 || d2 < 0 || isNaN(d1) || isNaN(d2)) {
 
 
-        alert ('Enter valid number')
+        alert('Enter valid number')
 
     }
 
     else {
 
 
-        const result = Rhombus (d1, d2)
+        const result = Rhombus(d1, d2)
         const container = containerArea()
-    
-        const assign = document.createElement('div');
-    
-    
+
+        const assign = document.createElement('tr');
+
+
         assign.innerHTML = `
     
-        <div  class="flex  space-x-5 text-sm p-2">
-    
-        <p>${count}.</p>
-                            <p>Rhombus
-                            </p>
-                            <p><span>${result}</span>cm<sup>2</sup></p>
-                            <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
-    
-        
-        
-        
-        
-        
-    
-    
-                            </div>
+        <th>${count}.</th>
+        <td>Rhombus</td>
+
+        <td>${result}</td>
+        <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
+        </td>
     
                             `
-    
-    
-        ;
+
+
+            ;
 
         container.appendChild(assign);
 
-    
+
     }
 
-   
+
 
 
 
@@ -312,52 +274,43 @@ document.getElementById('calculate-pentagon').addEventListener('click', function
 
 
 
-    if (p.trim  () === '' || b.trim () === '' || p <0 || b<0 || isNaN(p) || isNaN(b) )  {
+    if (p.trim() === '' || b.trim() === '' || p < 0 || b < 0 || isNaN(p) || isNaN(b)) {
 
 
-        alert ('Enter valid number')
+        alert('Enter valid number')
 
     }
 
     else {
 
 
-        const result = pentagon (p, b)
+        const result = pentagon(p, b)
         const container = containerArea()
-    
-        const assign = document.createElement('div');
-    
-    
+
+        const assign = document.createElement('tr');
+
+
         assign.innerHTML = `
     
-        <div  class="flex  space-x-5 text-sm p-2">
-    
-        <p>${count}.</p>
-                            <p>Pentagon
-                            </p>
-                            <p><span>${result}</span>cm<sup>2</sup></p>
-                            <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
-    
-        
-        
-        
-        
-        
-    
-    
-                            </div>
+        <th>${count}.</th>
+        <td>Pentagon</td>
+
+        <td>${result}</td>
+        <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
+        </td>
     
                             `
-    
-    
-        ;
+
+
+            ;
 
         container.appendChild(assign);
 
-    
+
+
     }
 
-   
+
 
 
 
@@ -385,52 +338,41 @@ document.getElementById('calculate-elep').addEventListener('click', function (e)
 
 
 
-    if (a.trim  () === '' || b.trim () === '' || a <0 || b<0 || isNaN(a) || isNaN(b) )  {
+    if (a.trim() === '' || b.trim() === '' || a < 0 || b < 0 || isNaN(a) || isNaN(b)) {
 
 
-        alert ('Enter valid number')
+        alert('Enter valid number')
 
     }
 
     else {
 
 
-        const result =  ellepse (a, b)
+        const result = ellepse(a, b)
         const container = containerArea()
-    
-        const assign = document.createElement('div');
-    
-    
+
+        const assign = document.createElement('tr');
+
+
         assign.innerHTML = `
     
-        <div  class="flex  space-x-5 text-sm p-2">
-    
-        <p>${count}.</p>
-                            <p>Ellipse
-                            </p>
-                            <p><span>${result}</span>cm<sup>2</sup></p>
-                            <button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
-    
-        
-        
-        
-        
-        
-    
-    
-                            </div>
+        <th>${count}.</th>
+        <td >Ellipse</td>
+
+        <td>${result}</td>
+        <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
+        </td>
     
                             `
-    
-    
-        ;
+
+
+            ;
 
         container.appendChild(assign);
 
-    
     }
 
-   
+
 
 
 
@@ -448,7 +390,7 @@ document.getElementById('calculate-elep').addEventListener('click', function (e)
 //That will take into another page
 
 
-document.getElementById ('btn-blog').addEventListener ('click', function () {
+document.getElementById('btn-blog').addEventListener('click', function () {
     window.location.href = 'blog.html';
 })
 
@@ -463,13 +405,13 @@ const cards = document.querySelectorAll('.card1');
 
 for (const card of cards) {
     card.addEventListener('mouseover', function () {
-      const color = getRandomColor();
-      card.style.backgroundColor = color;
+        const color = getRandomColor();
+        card.style.backgroundColor = color;
     });
-    card.addEventListener('mouseout', function() {
-      card.style.backgroundColor = 'white';
+    card.addEventListener('mouseout', function () {
+        card.style.backgroundColor = 'white';
     });
-  };
+};
 
 
 
