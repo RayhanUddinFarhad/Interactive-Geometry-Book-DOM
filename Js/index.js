@@ -41,7 +41,7 @@ document.getElementById('calculate-triangle').addEventListener('click', function
         <th>${count}.</th>
         <td>Triangle</td>
 
-        <td>${result}</td>
+        <td>${result}cm<sup>2</sup></td>
         <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
         </td>
     
@@ -108,7 +108,7 @@ document.getElementById('calculate-rectangle').addEventListener('click', functio
         <th>${count}.</th>
         <td>Rectangle</td>
 
-        <td>${result}</td>
+        <td>${result}cm<sup>2</sup></td>
         <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
         </td>
     
@@ -172,7 +172,7 @@ document.getElementById('calculate-paralle').addEventListener('click', function 
         <th>${count}.</th>
         <td>Parallelogram</td>
 
-        <td>${result}</td>
+        <td>${result}cm<sup>2</sup></td>
         <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
         </td>
     
@@ -237,7 +237,7 @@ document.getElementById('calculate-rhomb').addEventListener('click', function (e
         <th>${count}.</th>
         <td>Rhombus</td>
 
-        <td>${result}</td>
+        <td>${result}cm<sup>2</sup></td>
         <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
         </td>
     
@@ -300,7 +300,7 @@ document.getElementById('calculate-pentagon').addEventListener('click', function
         <th>${count}.</th>
         <td>Pentagon</td>
 
-        <td>${result}</td>
+        <td>${result}cm<sup>2</sup></td>
         <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
         </td>
     
@@ -365,7 +365,7 @@ document.getElementById('calculate-elep').addEventListener('click', function (e)
         <th>${count}.</th>
         <td >Ellipse</td>
 
-        <td>${result}</td>
+        <td>${result}cm<sup>2</sup></td>
         <td><button style="font-size: 11px;"  class="text-sm bg-[#1090D8] text-white px-1">convert to m<sup>2</sup></button>
         </td>
     
