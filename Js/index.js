@@ -9,7 +9,6 @@ let count = 0;
 // started calculate Triangle area
 document.getElementById('calculate-triangle').addEventListener('click', function (e) {
 
-    count = count + 1;
 
 
     const b = getValue('triangle-b');
@@ -27,9 +26,11 @@ document.getElementById('calculate-triangle').addEventListener('click', function
     }
 
     else {
+        count = count + 1;
 
 
-        const result = triaAngle(b, h)
+
+        const result = CalculationSystem1(b, h)
         const container = containerArea()
 
         const assign = document.createElement('tr');
@@ -75,7 +76,6 @@ document.getElementById('calculate-triangle').addEventListener('click', function
 
 document.getElementById('calculate-rectangle').addEventListener('click', function (e) {
 
-    count = count + 1;
 
 
     const w = getValue('reactangle-w');
@@ -93,9 +93,11 @@ document.getElementById('calculate-rectangle').addEventListener('click', functio
     }
 
     else {
+        count = count + 1;
 
 
-        const result = reactangle(w, l)
+
+        const result = CalculationSystem2(w, l)
         const container = containerArea()
 
         const assign = document.createElement('tr');
@@ -138,7 +140,6 @@ document.getElementById('calculate-rectangle').addEventListener('click', functio
 
 document.getElementById('calculate-paralle').addEventListener('click', function (e) {
 
-    count = count + 1;
 
 
     const b = getValue('paralle-b');
@@ -156,9 +157,11 @@ document.getElementById('calculate-paralle').addEventListener('click', function 
     }
 
     else {
+        count = count + 1;
 
 
-        const result = Parallelogram(b, h)
+
+        const result = CalculationSystem2(b, h)
         const container = containerArea()
 
         const assign = document.createElement('tr');
@@ -202,7 +205,6 @@ document.getElementById('calculate-paralle').addEventListener('click', function 
 
 document.getElementById('calculate-rhomb').addEventListener('click', function (e) {
 
-    count = count + 1;
 
 
     const d1 = getValue('Rhomb-d1');
@@ -220,9 +222,11 @@ document.getElementById('calculate-rhomb').addEventListener('click', function (e
     }
 
     else {
+        count = count + 1;
 
 
-        const result = Rhombus(d1, d2)
+
+        const result = CalculationSystem1(d1, d2)
         const container = containerArea()
 
         const assign = document.createElement('tr');
@@ -264,7 +268,6 @@ document.getElementById('calculate-rhomb').addEventListener('click', function (e
 //Start the Pentagon area calculation
 document.getElementById('calculate-pentagon').addEventListener('click', function (e) {
 
-    count = count + 1;
 
 
     const p = getValue('pentagon-p');
@@ -282,9 +285,11 @@ document.getElementById('calculate-pentagon').addEventListener('click', function
     }
 
     else {
+        count = count + 1;
 
 
-        const result = pentagon(p, b)
+
+        const result = CalculationSystem1(p, b)
         const container = containerArea()
 
         const assign = document.createElement('tr');
@@ -328,7 +333,6 @@ document.getElementById('calculate-pentagon').addEventListener('click', function
 //Start the Ellipse area calculation
 document.getElementById('calculate-elep').addEventListener('click', function (e) {
 
-    count = count + 1;
 
 
     const a = getValue('ellep-a');
@@ -346,6 +350,8 @@ document.getElementById('calculate-elep').addEventListener('click', function (e)
     }
 
     else {
+        count = count + 1;
+
 
 
         const result = ellepse(a, b)
